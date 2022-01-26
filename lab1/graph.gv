@@ -1,0 +1,19 @@
+digraph G {
+    node [shape="box"]
+    rankdir="LR" 
+    days [label="Дни до экзамена"]
+    work [label="Количество несделанных работ"]
+    temp [label="Температура на улице"]
+    rain [label="Наличие осадков"]
+
+    ftime [label="Свободное время"]
+    wthr [label="Погода"]
+
+    act [label="Рекомендуемое действие"]
+
+    days -> ftime -> act
+    work -> ftime
+    temp -> wthr -> act
+    rain -> wthr
+
+}

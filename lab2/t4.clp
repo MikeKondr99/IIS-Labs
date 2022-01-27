@@ -15,8 +15,7 @@
         (year ?year & 2) 
         (name ?name & :(stringp ?name)) 
         (aver_mark ?avg & :(floatp ?avg))
-        (age ?age)
-        ;(age (= 19 + year)) ; Возраст оканчания 24 строго
+        (age =(+ 19 ?year)) ; Возраст окончания 24 строго
     )
     (test (<= (+ ?age (- 5 ?year)) 24))
     (test (>= ?avg 4.5))

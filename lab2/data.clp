@@ -1,9 +1,10 @@
 (deftemplate student
-(slot name)		; имя студента
-(slot age)		; возраст
-(slot year)		; год обучения (курс)
-(slot spec)		; специализация
-(slot aver_mark))	; средний балл
+    (slot name)		; имя студента
+    (slot age)		; возраст
+    (slot year)		; год обучения (курс)
+    (slot spec)		; специализация
+    (slot aver_mark); средний балл
+)	
 
 (deffacts students
     (student (name "John")   (age 20) (year 1) (spec "hard") (aver_mark 4.7))

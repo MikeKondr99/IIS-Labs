@@ -1,11 +1,6 @@
 %s/CLIPS.*//g 
 %s/For.*//g 
 %s/initial-fact/i-f/g
-
-%s/^\w+\s+//g
-
 %s/^\s*[^ ]* //g
-
 %s/^\s*//g
-
 %s/(i/----------\r(i

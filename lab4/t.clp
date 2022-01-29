@@ -5,6 +5,7 @@
 )
 
 
+;Шаблон для ситуации
 (deftemplate MAIN::status 
     (slot  farmer-location  (type SYMBOL)  (allowed-symbols shore-1 shore-2))
     (slot fox-location  (type SYMBOL)  (allowed-symbols shore-1 shore-2))
@@ -15,6 +16,7 @@
     (slot last-move  (type SYMBOL) (allowed-symbols no-move alone fox goat cabbage))
 )
 
+;начальная позиция
 (deffacts MAIN::initial-positions
     (status 
         (search-depth 1)
@@ -32,6 +34,7 @@
     (opposite-of shore-2 shore-1)
 )
 
+;Правило взять с собой лису
 (defrule MAIN::move-with-fox 		    		     
     ?node <- (status (search-depth ?num) 
         (farmer-location ?side)		     
@@ -48,6 +51,7 @@
     )
 )		  		
 
+;Правило взять с собой капусту
 (defrule MAIN::move-with-cabbage 		    		     
     ?node <- (status (search-depth ?num) 
         (farmer-location ?side)		     
@@ -64,6 +68,7 @@
     )
 )
 
+;Правило взять с собой козу
 (defrule MAIN::move-with-goat
     ?node <- (status (search-depth ?num) 
         (farmer-location ?side)		     
@@ -80,6 +85,7 @@
     )
 )		  		
 
+;Переплыть одному
 (defrule MAIN::move-alone
     ?node <- (status (search-depth ?num) 
         (farmer-location ?side)
@@ -103,6 +109,7 @@
     (import MAIN deftemplate status)
 )
 
+;Недопустить лиса ест козу
 (defrule CONSTRAINTS::fox-eats-goat 
     (declare (auto-focus TRUE))
     ?node <- (status 
@@ -112,6 +119,7 @@
     => (retract ?node)
 )
 
+;Недопустить коза ест капусту
 (defrule CONSTRAINTS::goat-eats-cabbage 
     (declare (auto-focus TRUE))
     ?node <- (status 
@@ -121,6 +129,7 @@
     => (retract ?node)
 )
 
+;Недопустить путь который уже был найден но с более длинным путём
 (defrule CONSTRAINTS::circular-path 
     (declare (auto-focus TRUE))
     (status 
@@ -147,11 +156,13 @@
     (import MAIN deftemplate status)
 )
 
+; Шаблон движений
 (deftemplate SOLUTION::moves
    (slot id (type FACT-ADDRESS SYMBOL) (allowed-symbols no-parent)) 
    (multislot moves-list (type SYMBOL) (allowed-symbols no-move alone fox goat cabbage))
 )
 
+; Найти правильный ответ
 (defrule SOLUTION::goal-test 
     (declare (auto-focus TRUE))
     ?node <- (status 
@@ -166,6 +177,7 @@
     (assert (moves (id ?parent) (moves-list ?move)))
 )
 
+; Построить ответ
 (defrule SOLUTION::build-solution
     ?node <- (status 
         (parent ?parent)
@@ -177,6 +189,7 @@
 )
 
 
+; Вывести ответ
 (defrule SOLUTION::print-solution
     ?mv <- (moves (id no-parent) (moves-list no-move $?m))
     =>

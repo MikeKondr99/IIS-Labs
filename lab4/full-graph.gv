@@ -1,0 +1,52 @@
+digraph G {
+    edge [maxlen="0.3"]
+    rankdir="TB" 
+    fxgc_ [label="fxgc--"]
+    fxc_g [label="fxc_g"]
+    c_fxg [label="c--fxg"]
+    fxc_g [label="fxc--g"]
+    x_fgc [label="x--fgc"]
+    fxg_c [label="fxg--c"]
+    g_fxc [label="g--fxc"]
+    fg_xc [label="fg--xc"]
+    _fxgc [label="--fxgc"]
+
+    xg_fc [color="red"]
+    fx_gc [color="red"]
+    xc_fg [label="xc--fg"]
+    gc_fx [color="red"]
+    xgc_f [color="red"]
+    fc_xg [color=red]
+    fgc_x [label="fgc--x"]
+
+
+
+
+
+
+    fxgc_ -> xg_fc [label="cabbage"]
+    fxgc_ -> gc_fx [label="fox"]
+    fxgc_ -> xc_fg [label="goat"]
+    fxgc_ -> xgc_f [label="alone"]
+
+    xc_fg -> fxc_g [label="alone"]
+
+    fxc_g -> x_fgc [label="cabbage"]
+    fxc_g -> c_fxg [label="fox"]
+
+    c_fxg -> fgc_x [label="goat"]
+    c_fxg -> fc_xg [label="alone"]
+
+    fgc_x -> g_fxc [label="cabbage"]
+    x_fgc -> fxg_c [label="goat"]
+    x_fgc -> fx_gc [label="alone"]
+    fxg_c -> g_fxc [label="fox"]
+
+    g_fxc -> fg_xc [label="alone"]
+
+
+    fg_xc -> _fxgc [label="goat"]
+    
+    _fxgc [color="black:white:black",peripheries=2]
+
+}

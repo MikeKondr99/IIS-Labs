@@ -1,0 +1,327 @@
+strict digraph {
+    fshore13300 [label="3,3|0,0"]
+    fshore20033 [label="0,0|3,3"]
+    fshore11122 -> fshore20033
+    fshore10231 -> fshore20033
+
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore21122 [label="1,1|2,2"]
+    fshore13102 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore13102 -> fshore22013
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore20132 [label="0,1|3,2"]
+    fshore10330 -> fshore20132
+    fshore11221 [label="1,2|2,1"]
+    fshore20231 -> fshore11221
+    fshore10330 [label="0,3|3,0"]
+    fshore20231 -> fshore10330
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore21122 [label="1,1|2,2"]
+    fshore13102 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore13102 -> fshore22013
+    fshore20231 [label="0,2|3,1"]
+    fshore12211 -> fshore20231
+    fshore21122 [label="1,1|2,2"]
+    fshore12211 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore12211 -> fshore22013
+    fshore13102 [label="3,1|0,2"]
+    fshore22112 -> fshore13102
+    fshore12211 [label="2,2|1,1"]
+    fshore22112 -> fshore12211
+    fshore13102 [label="3,1|0,2"]
+    fshore23003 -> fshore13102
+    fshore22112 [label="2,1|1,2"]
+    fshore13201 -> fshore22112
+    fshore23003 [label="3,0|0,3"]
+    fshore13201 -> fshore23003
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore20132 [label="0,1|3,2"]
+    fshore10330 -> fshore20132
+    fshore11221 [label="1,2|2,1"]
+    fshore20231 -> fshore11221
+    fshore10330 [label="0,3|3,0"]
+    fshore20231 -> fshore10330
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore21122 [label="1,1|2,2"]
+    fshore13102 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore13102 -> fshore22013
+    fshore20231 [label="0,2|3,1"]
+    fshore12211 -> fshore20231
+    fshore21122 [label="1,1|2,2"]
+    fshore12211 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore12211 -> fshore22013
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore20132 [label="0,1|3,2"]
+    fshore10330 -> fshore20132
+    fshore11221 [label="1,2|2,1"]
+    fshore20231 -> fshore11221
+    fshore10330 [label="0,3|3,0"]
+    fshore20231 -> fshore10330
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore20231 [label="0,2|3,1"]
+    fshore11320 -> fshore20231
+    fshore21122 [label="1,1|2,2"]
+    fshore11320 -> fshore21122
+    fshore11320 [label="1,3|2,0"]
+    fshore20330 -> fshore11320
+    fshore13102 [label="3,1|0,2"]
+    fshore22112 -> fshore13102
+    fshore12211 [label="2,2|1,1"]
+    fshore22112 -> fshore12211
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore21122 [label="1,1|2,2"]
+    fshore13102 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore13102 -> fshore22013
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore20132 [label="0,1|3,2"]
+    fshore10330 -> fshore20132
+    fshore11221 [label="1,2|2,1"]
+    fshore20231 -> fshore11221
+    fshore10330 [label="0,3|3,0"]
+    fshore20231 -> fshore10330
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore21023 [label="1,0|2,3"]
+    fshore13003 -> fshore21023
+    fshore11122 [label="1,1|2,2"]
+    fshore20132 -> fshore11122
+    fshore10231 [label="0,2|3,1"]
+    fshore20132 -> fshore10231
+    fshore11122 [label="1,1|2,2"]
+    fshore21023 -> fshore11122
+    fshore20132 [label="0,1|3,2"]
+    fshore11221 -> fshore20132
+    fshore21023 [label="1,0|2,3"]
+    fshore11221 -> fshore21023
+    fshore11221 [label="1,2|2,1"]
+    fshore21122 -> fshore11221
+    fshore13003 [label="3,0|0,3"]
+    fshore22013 -> fshore13003
+    fshore21122 [label="1,1|2,2"]
+    fshore13102 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore13102 -> fshore22013
+    fshore20231 [label="0,2|3,1"]
+    fshore12211 -> fshore20231
+    fshore21122 [label="1,1|2,2"]
+    fshore12211 -> fshore21122
+    fshore22013 [label="2,0|1,3"]
+    fshore12211 -> fshore22013
+    fshore13102 [label="3,1|0,2"]
+    fshore22112 -> fshore13102
+    fshore12211 [label="2,2|1,1"]
+    fshore22112 -> fshore12211
+    fshore13102 [label="3,1|0,2"]
+    fshore23003 -> fshore13102
+    fshore22112 [label="2,1|1,2"]
+    fshore13201 -> fshore22112
+    fshore23003 [label="3,0|0,3"]
+    fshore13201 -> fshore23003
+    fshore20330 [label="0,3|3,0"]
+    fshore12310 -> fshore20330
+    fshore22112 [label="2,1|1,2"]
+    fshore12310 -> fshore22112
+    fshore13201 [label="3,2|0,1"]
+    fshore22211 -> fshore13201
+    fshore12310 [label="2,3|1,0"]
+    fshore22211 -> fshore12310
+    fshore13201 [label="3,2|0,1"]
+    fshore23102 -> fshore13201
+    fshore22211 [label="2,2|1,1"]
+    fshore13300 -> fshore22211
+    fshore23102 [label="3,1|0,2"]
+    fshore13300 -> fshore23102
+    fshore23201 [label="3,2|0,1"]
+    fshore13300 -> fshore23201
+}

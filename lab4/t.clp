@@ -154,6 +154,8 @@
 
 (defmodule SOLUTION 
     (import MAIN deftemplate status)
+    (import MAIN defglobal *?initial-missionaries*)
+    (import MAIN defglobal *?initial-cannibals*)
 )
 
 ; Шаблон движений
@@ -167,10 +169,6 @@
     (declare (auto-focus TRUE))
     ?node <- (status 
         (parent ?parent)
-        (farmer-location shore-2)
-        (fox-location shore-2)
-        (goat-location shore-2)
-        (cabbage-location shore-2)
         (last-move ?move))
     =>
     (retract ?node)

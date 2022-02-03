@@ -42,7 +42,7 @@
     (modify ?g (task build))
 )
 
-; Добавление кубика из руки на верх башни
+; Добавление кубика из руки наверх башни
 (defrule Build 
     ?g <- (goal (task build))
     ?t <- (tower (blocks $?rest))

@@ -1,5 +1,4 @@
 
-
 ; Шаблон для блока
 (deftemplate block 
     (slot size  (type INTEGER)                )
@@ -7,10 +6,12 @@
     (slot color (type SYMBOL )                )
 )
 
+; Шаблон башни
 (deftemplate tower 
     (multislot blocks (type SYMBOL))
 )
 
+; Шаблон под-цели
 (deftemplate goal
     (slot task (type SYMBOL))
 )
@@ -41,6 +42,7 @@
     (modify ?g (task build))
 )
 
+; Добавление кубика из руки на верх башни
 (defrule Build 
     ?g <- (goal (task build))
     ?t <- (tower (blocks $?rest))
@@ -51,6 +53,7 @@
     (modify ?g (task find))
 )
 
+; Вывод цветов башни сверху вниз
 (defrule Print 
     ?t <- (tower (blocks $?rest))
     (test (= (length ?rest) 4))

@@ -1,10 +1,12 @@
 
 ;; MODULE MAIN
 
+;объявление модуля main
 (defmodule MAIN 
     (export deftemplate status)
 )
 
+;шаблон состояния
 (deftemplate MAIN::status 
     (slot shore-1-miss  (type INTEGER)             (range 0 ?VARIABLE))
     (slot shore-1-cann  (type INTEGER)             (range 0 ?VARIABLE))
@@ -16,15 +18,18 @@
     (slot last-move     (type STRING))
 )
 
+;начальное количество миссионеров и каннибалов
 (defglobal MAIN
    ?*initial-missionaries* = 3
    ?*initial-cannibals* = 3
 )
 
+;сколько может держать лодка
 (deffacts MAIN::boat-information 
    (boat-can-hold 2)
 )
 
+;начальные позиции
 (deffacts MAIN::initial-positions
     (status
         (shore-1-miss ?*initial-missionaries*)
@@ -39,6 +44,7 @@
 )
 
 
+;функция для вывода сообщения о перемещении
 (deffunction MAIN::move-string (?miss ?cann ?shore)
     (switch ?miss
         (case 0 then
@@ -63,6 +69,7 @@
                 (default then
                     (format nil "Move %d missionary and %d cannibals to %s.%n" ?miss ?cann ?shore))))))
 
+; Правила движения с начального острова
 (defrule MAIN::shore-1-move
     ?node <- (status
         (shore-1-miss ?s1m)
@@ -93,6 +100,7 @@
     )
 )
 
+; Правила движения с конечного острова
 (defrule MAIN::shore-2-move
     ?node <- (status
         (shore-1-miss ?s1m)
